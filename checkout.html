@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finalizar compra - Pasta Pascarella</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo-sin fondo.png" type="image/x-icon">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Script principal -->
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Header principal con logo, menú, hamburguesa y carrito -->
+  <header class="main-header">
+    <div class="header-flex">
+      <!-- Logo de la empresa -->
+      <a href="index.html"><img src="images/logo-blanco.JPG" alt="Pasta Pascarella" class="logo"></a>
+       <!-- Botón hamburguesa para menú móvil -->
+       <button class="hamburguesa" aria-label="Abrir menú">&#9776;
+        <span></span>
+      </button>
+      <!-- Menú de navegación -->
+      <nav>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="index.html#testimonios">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Icono del carrito de compras -->
+      <div class="carrito-header">
+        <a href="carrito.html" title="Ver carrito">
+          <img src="images/carrito-de-compras.png" alt="Carrito de compras" class="icono-carrito">
+          <span class="carrito-contador">0</span>
+        </a>
+      </div>
+      <!-- Botón hamburguesa para menú móvil -->
+      <button class="hamburguesa" aria-label="Abrir menú">
+        <span></span>
+      </button>
+    </div>
+    <section class="hero">
+    
+    </section>
+  </header>
+
+  <main>
+    <!-- Sección principal de checkout -->
+    <section class="checkout-section">
+      <h1>Finalizar compra</h1>
+      <div class="checkout-container">
+        <!-- Formulario de datos de envío y pago -->
+        <form class="checkout-form" id="checkout-form">
+          <h2>Datos de envío</h2>
+          <!-- Input Nombre y Apellidos-->
+          <label>
+            Nombre y apellidos
+            <input type="text" name="nombre" id="checkout-nombre" required>
+          </label>
+          <!-- Input Dirección -->
+          <label>
+            Dirección
+            <input type="text" name="direccion" id="checkout-direccion" required>
+          </label>
+          <!-- Input Ciudad -->
+          <label>
+            Ciudad
+            <input type="text" name="ciudad" id="checkout-ciudad" required>
+          </label>
+          <!-- Input Codigo Postal -->
+          <label>
+            Código postal
+            <input type="text" name="cp" id="checkout-cp" required>
+          </label>
+          <!-- Input Teléfono -->
+          <label>
+            Teléfono
+            <input type="tel" name="telefono" id="checkout-telefono" required>
+          </label>
+          <!-- Input Correo electrónico -->
+          <label>
+            Correo electrónico
+            <input type="email" name="email" id="checkout-email" required>
+          </label>
+
+          <!-- Selección Métodos de Pago -->
+          <h2>Método de pago</h2>
+          <!-- Input Tarjeta de crédito -->
+          <label>
+            <input type="radio" name="pago" value="tarjeta" id="pago-tarjeta" required>
+            Tarjeta de crédito/débito
+          </label>
+          <!-- Input Paypal -->
+          <label>
+            <input type="radio" name="pago" value="paypal" id="pago-paypal">
+            PayPal
+          </label>
+          <!-- Input Contra reembolso -->
+          <label>
+            <input type="radio" name="pago" value="contrareembolso" id="pago-contrareembolso">
+            Contra reembolso
+          </label>
+
+          <!-- Botón Realizar pedido -->
+          <button type="submit" class="btn-cta">Realizar pedido</button>
+        </form>
+        <!-- Resumen del pedido (carrito) -->
+        <div class="checkout-resumen">
+          <h2>Resumen del pedido</h2>
+          <div id="checkout-carrito">
+            <!-- Aquí se mostrará el resumen del carrito con JS -->
+          </div>
+          <div class="checkout-total">
+            <span>Total:</span>
+            <span id="checkout-total-precio">0,00 €</span>
+          </div>
+          <a href="carrito.html" class="btn">Volver al carrito</a>
+        </div>
+      </div>
+    </section>
+  </main>
+ <!-- Footer con redes sociales, logo y derechos -->
+ <footer>
+  <div class="container">
+    <section id="redes" class="redes">
+      <h2>Síguenos en redes sociales</h2>
+      <div class="social">
+        <a href="404.html"><img src="images/facebook.png" alt="Facebook" style="height: 50px; width: auto;"></a>
+        <a href="https://www.instagram.com/pastapascarella/"><img src="images/logotipo-de-instagram.png" alt="Instagram" style="height: 50px; width: auto;"></a>
+      </div>
+    </section>
+    <!-- Enlaces legales -->
+    <section class="footer-legales" style="text-align:center; margin: 20px 0 10px 0;">
+      <a href="legal/aviso-legal.html" target="_blank" style="margin: 0 10px;">Aviso Legal</a> |
+      <a href="legal/politica-privacidad.html" target="_blank" style="margin: 0 10px;">Política de Privacidad</a> |
+      <a href="legal/politica-cookies.html" target="_blank" style="margin: 0 10px;">Política de Cookies</a> |
+      <a href="legal/condiciones-uso.html" target="_blank" style="margin: 0 10px;">Condiciones de Uso</a>
+    </section>
+    <img src="images/logo-sin-fondo-negro.png" alt="Pasta Pascarella" class="logo-footer" style="height: 80px;">
+    <p>&copy; 2025 Pasta Pascarella. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>

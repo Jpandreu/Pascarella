@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito de compras - Pasta Pascarella</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo-sin fondo.png" type="image/x-icon">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Script principal -->
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Header principal con logo, menú, hamburguesa y carrito -->
+  <header class="main-header">
+    <div class="container header-flex">
+      <!-- Logo de la empresa -->
+      <a href="index.html"><img src="images/logo-blanco.JPG" alt="Pasta Pascarella" class="logo"></a>
+      <!-- Botón hamburguesa para menú móvil -->
+      <button class="hamburguesa" aria-label="Abrir menú">&#9776;
+        <span></span>
+      </button>
+      <!-- Menú de navegación -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="index.html#testimonios">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Icono del carrito de compras -->
+      <div class="carrito-header">
+        <a href="carrito.html" title="Ver carrito">
+          <img src="images/carrito-de-compras.png" alt="Carrito de compras" class="icono-carrito">
+          <span class="carrito-contador">2</span>
+        </a>
+      </div>
+    </div>
+    <!-- Hero del carrito -->
+    <section class="hero">
+      <h1>Tu carrito de compras</h1>
+      <h2>Revisa y finaliza tu pedido de pasta fresca</h2>
+    </section>
+  </header>
+
+  <main>
+    <!-- Sección principal del carrito -->
+    <section class="carrito-section">
+      <h2>Resumen de tu compra</h2>
+      <!-- Tabla con los productos añadidos al carrito -->
+      <table class="carrito-tabla">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Ejemplo de productos en el carrito, 
+           es solo visual aqui para ver como funcionaria la tabla -->
+          <!-- <tr>
+            <td>
+              <img src="assets/tagliatelle.jpg" alt="Tagliatelle" class="carrito-img">
+              Tagliatelle
+            </td>
+            <td>
+              <input type="number" value="1" min="1" class="carrito-cantidad">
+            </td>
+            <td>4,50 €</td>
+            <td>4,50 €</td>
+            <td><button class="carrito-eliminar">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/ravioli.jpg" alt="Ravioli" class="carrito-img">
+              Ravioli Ricotta y Espinaca
+            </td>
+            <td>
+              <input type="number" value="2" min="1" class="carrito-cantidad">
+            </td>
+            <td>5,20 €</td>
+            <td>10,40 €</td>
+            <td><button class="carrito-eliminar">Eliminar</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+      <!-- Total del carrito -->
+      <div class="carrito-total">
+        <span>Total:</span>
+        <span class="carrito-total-precio">14,90 €</span>
+      </div>
+      <!-- Acciones del carrito -->
+      <div class="carrito-acciones">
+        <a href="productos.html" class="btn">Seguir comprando</a>
+        <a href="checkout.html" class="btn-cta">Finalizar compra</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer con redes sociales, logo y derechos -->
+  <footer>
+    <div class="container">
+      <section id="redes" class="redes">
+        <h2>Síguenos en redes sociales</h2>
+        <div class="social">
+          <a href="404.html"><img src="images/facebook.png" alt="Facebook" style="height: 50px; width: auto;"></a>
+          <a href="https://www.instagram.com/pastapascarella/"><img src="images/logotipo-de-instagram.png" alt="Instagram" style="height: 50px; width: auto;"></a>
+        </div>
+      </section>
+       <!-- Enlaces legales -->
+       <section class="footer-legales" style="text-align:center; margin: 20px 0 10px 0;">
+        <a href="legal/aviso-legal.html" target="_blank" style="margin: 0 10px;">Aviso Legal</a> |
+        <a href="legal/politica-privacidad.html" target="_blank" style="margin: 0 10px;">Política de Privacidad</a> |
+        <a href="legal/politica-cookies.html" target="_blank" style="margin: 0 10px;">Política de Cookies</a> |
+        <a href="legal/condiciones-uso.html" target="_blank" style="margin: 0 10px;">Condiciones de Uso</a>
+      </section>
+      <img src="images/logo-sin-fondo-negro.png" alt="Pasta Pascarella" class="logo-footer" style="height: 80px;">
+      <p>&copy; 2025 Pasta Pascarella. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

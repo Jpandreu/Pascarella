@@ -1,0 +1,29 @@
+{
+  "name": "pasta-pascarella",
+  "version": "1.0.0",
+  "description": "Página web para Pasta Pascarella, especializada en pasta fresca italiana.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "pasta",
+    "italiana",
+    "fresca",
+    "pasta fresca",
+    "Pasta Pascarella"
+  ],
+  "author": "Josep Andreu",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://pastapascarella.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuusuario/pasta-pascarella.git"
+  }
+}

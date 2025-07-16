@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Cookies - Pasta Pascarella</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <button onclick="cerrarVentana()" style="position:fixed;top:18px;right:28px;font-size:2rem;background:none;border:none;color:#9e362b;cursor:pointer;z-index:1001;" title="Cerrar">&times;</button>
+  <main class="legal-main" style="max-width:700px;margin:40px auto;padding:2em;background:#fff;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.08);">
+    <h1>Política de Cookies</h1>
+    <p><strong>¿Qué son las cookies?</strong></p>
+    <p>Una cookie es un pequeño archivo de texto que se almacena en tu navegador cuando visitas casi cualquier página web. Su utilidad es que la web sea capaz de recordar tu visita cuando vuelvas a navegar por esa página.</p>
+    <p><strong>¿Qué tipos de cookies utiliza esta página web?</strong></p>
+    <ul>
+      <li><strong>Cookies técnicas:</strong> Son aquellas necesarias para la navegación y el buen funcionamiento de nuestra web.</li>
+      <li><strong>Cookies de análisis:</strong> Permiten cuantificar el número de usuarios y así realizar la medición y análisis estadístico del uso que hacen los usuarios de la web. Para ello se analiza su navegación en nuestra página web con el fin de mejorar la oferta de productos o servicios que ofrecemos.</li>
+      <li><strong>Cookies de personalización:</strong> Permiten al usuario acceder al servicio con algunas características de carácter general predefinidas.</li>
+    </ul>
+    <p><strong>Cookies propias y de terceros</strong></p>
+    <p>Esta web utiliza cookies propias y de terceros. Las cookies de terceros son aquellas que se envían al equipo del usuario desde un dominio gestionado por otra entidad distinta a Pasta Pascarella, como por ejemplo Google Analytics.</p>
+    <p><strong>Desactivación o eliminación de cookies</strong></p>
+    <p>Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de las opciones de tu navegador. En cada navegador la operativa es diferente, la función de 'Ayuda' te mostrará cómo hacerlo.</p>
+    <p><strong>Cookies utilizadas en este sitio web</strong></p>
+    <p>[Indica aquí las cookies concretas que usas, por ejemplo: _ga, _gid, PHPSESSID, etc. Si usas Google Analytics, Facebook Pixel, etc., debes mencionarlo.]</p>
+    <p><strong>Aceptación de la Política de Cookies</strong></p>
+    <p>Al continuar navegando por este sitio web entendemos que aceptas el uso de cookies.</p>
+    <p><strong>Más información</strong></p>
+    <p>Para cualquier duda sobre nuestra política de cookies puedes contactar con nosotros en [Correo electrónico de contacto].</p>
+    <p style="margin-top:2em;"><a href="../index.html">&larr; Volver a la página principal</a></p>
+  </main>
+  <script>
+    function cerrarVentana() {
+      // Verificar si la ventana fue abierta desde otra ventana
+      if (window.opener && !window.opener.closed) {
+        try {
+          window.close();
+          return;
+        } catch (e) {
+          // Si falla, continuar con la redirección
+        }
+      }
+      
+      // Si no se puede cerrar, redirigir a la página principal
+      try {
+        window.location.href = '../index.html';
+      } catch (e) {
+        // Fallback: mostrar mensaje
+        alert('Para volver, usa el botón de atrás de tu navegador o ve a la página principal.');
+      }
+    }
+  </script>
+</body>
+</html> 

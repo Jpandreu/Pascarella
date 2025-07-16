@@ -1,0 +1,1478 @@
+/* Fuente, color y espaciado general del body */
+body {
+  font-family: 'Open Sans', Arial, sans-serif; 
+  margin: 0;
+  background: #faf1e4;
+  color: #222;
+  padding-top: 76px; 
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Estilos generales para enlaces */
+a {
+  color: #9e362b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+/* Estilos para enlaces al pasar el cursor */
+a:hover {
+  color: #6a241d;
+}
+
+/* Estilos del header principal */
+header.main-header {
+  background: #faf1e4;
+  color: #9e362b;
+  padding-bottom: 2rem;
+}
+
+/* Barra de menú fija arriba, con flexbox para distribuir logo, menú y carrito */
+.header-flex {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 100;
+  background: #ffffff; /* O el color de tu header */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.5rem 5%;
+}
+
+/* Logo del header */
+.logo {
+  height: 60px;
+}
+
+/* Menú de navegación horizontal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Enlaces del menú */
+nav a {
+  color:  #9e362b;
+  font-weight: bold;
+  font-size: 1.15rem;
+  letter-spacing: 0.3px;
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5rem 0.8rem;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  color: #6a241d;
+  font-weight: 600;
+  transform: translateY(-1px);
+}
+
+/* Hero principal */
+.hero {
+  text-align: center;
+  margin-top: 3rem;
+}
+/* Título principal */
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+/* Subtítulo principal */
+.hero h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Títulos de sección */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #9e362b;
+  line-height: 1.3;
+}
+
+/* Subtítulos */
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.3rem;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Subtítulos menores */
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+/* Párrafos */
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Botón principal de llamada a la acción */
+.btn-cta {
+  background: #e6b800;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+/* Efecto hover para el botón principal */
+.btn-cta:hover {
+  background: #cfa000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 184, 0, 0.3);
+}
+/* Estilos para el botón principal cuando está deshabilitado */
+.btn-cta:disabled,
+.btn-cta.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* Espaciado general del main */
+main {
+  padding: 0rem 5%;
+}
+
+/* Grids para productos, beneficios, testimonios y pasos */
+.productos-grid,
+.beneficios-grid,
+.testimonios-grid,
+.funciona-pasos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Tarjetas de producto, beneficio, testimonio y paso */
+.producto,
+.beneficio,
+.testimonio,
+.paso {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  width: 240px;
+  border: 1px solid rgba(230, 184, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover para los pasos */
+.paso:hover{
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid #e6b800;
+}
+
+/* Imágenes dentro de las tarjetas */
+.producto img,
+.beneficio img,
+.paso img,
+.testimonio img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* Título del producto */
+.producto h3 {
+  margin: 0.7rem 0 0.3rem;
+}
+
+/* Precio del producto */
+.producto .precio {
+  display: block;
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #9e362b;
+  margin: 0.5rem 0;
+}
+
+/* Animación de entrada para productos (desde la izquierda) */
+.producto {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 1.5s ease, transform 1.5s cubic-bezier(.4,0,.2,1);
+}
+/* Animación de entrada para productos (desde la derecha) */
+.movizquierda {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1.5s ease, transform 1.5s cubic-bezier(.4,0,.2,1);
+}
+/* Animación de entrada para productos (desde la izquierda) */
+.producto.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Botón secundario */
+.btn {
+  background: #9e362b;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+/* Efecto hover para el botón secundario */
+.btn:hover {
+  background: #7a2820;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(158, 54, 43, 0.3);
+}
+
+/* Imágenes de los pasos */
+.funciona-pasos .paso img {
+  width: 260px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Espaciado para beneficios y testimonios */
+.beneficios {
+  margin-top: 3rem;
+}
+/* Espaciado para testimonios */
+.testimonios {
+  margin-top: 3rem;
+}
+/* Mejora para imágenes de testimonios */
+.testimonio img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #e6b800;
+  box-shadow: 0 2px 8px rgba(158,54,43,0.10);
+}
+
+/* Citas en testimonios */
+.testimonio blockquote {
+  font-style: italic;
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #555;
+}
+
+/* Formulario de contacto */
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* Estilos para el formulario de contacto */
+.contacto input,
+.contacto textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+/* Estilos para el botón del formulario de contacto */
+.contacto button {
+  background: #e6b800;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Efecto hover para el botón del formulario de contacto */
+.contacto button:hover {
+  background: #cfa000;
+}
+
+/* Redes sociales en el footer */
+.social{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Footer con imagen de fondo y estilos */
+footer {
+  background: url('../../images/fondo-footer.jpeg') center bottom no-repeat;
+  background-size: cover;
+  color: #9e362b;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  position: relative;
+}
+/* Logo del footer */
+.logo-footer {
+  height: 40px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* Estilos para las imágenes de las redes sociales */
+.social a img {
+  width: 28px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+/* Efecto hover para las imágenes de las redes sociales */
+.social a img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+/* Centrar el texto */
+.center {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Carrito de compras en el header */
+.carrito-header {
+  position: relative;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+/* Estilos para el enlace del carrito */
+.carrito-header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+/* Estilos para el icono del carrito */
+.icono-carrito {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+/* Estilos para el contador del carrito */
+.carrito-contador {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e6b800;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* ----------- Carrito.html ----------- */
+.carrito-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+}
+/* Estilos para la tabla del carrito */
+.carrito-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+/* Estilos para las celdas de la tabla del carrito */
+.carrito-tabla th, .carrito-tabla td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 1.05rem;
+}
+/* Estilos para las celdas de la tabla del carrito */
+.carrito-tabla th {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #9e362b;
+  padding-bottom: 1.2rem;
+}
+/* Estilos para las celdas de la tabla del carrito */
+.carrito-tabla td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  vertical-align: middle;
+}
+/* Estilos para la imagen del carrito */
+.carrito-img {
+  width: 70px;
+  border-radius: 10px;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* Estilos para la cantidad del carrito */
+.carrito-cantidad {
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #e6b800;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* Estilos para el botón de eliminar del carrito */
+.carrito-eliminar {
+  background: #9e362b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+/* Efecto hover para el botón de eliminar del carrito */
+.carrito-eliminar:hover {
+  background: #7a2820;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(158, 54, 43, 0.3);
+}
+/* Estilos para el total del carrito */
+.carrito-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: #faf1e4;
+  border-radius: 12px;
+  border: 2px solid #e6b800;
+}
+/* Estilos para el primer span del total del carrito */
+.carrito-total span:first-child {
+  font-family: 'Playfair Display', serif;
+  color: #9e362b;
+}
+/* Estilos para el segundo span del total del carrito */
+.carrito-total span:last-child {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1.6rem;
+}
+/* Estilos para el contenedor de acciones del carrito */
+.carrito-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* ----------- Slider de hero ----------- */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  max-height: 480px;
+  overflow: hidden;
+}
+/* Estilos para el contenedor del slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 480px; 
+  overflow: hidden;
+}
+/* Estilos para el contenedor de las imágenes del slider */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 480px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 1s cubic-bezier(.4,0,.2,1);
+  font-size: 1.5rem;;
+}
+/* Estilos para la imagen activa del slider */
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+/* Optimización de videos del hero */
+.slide-video {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  filter: grayscale(1) brightness(0.7);
+  display: block;
+  /* Optimizaciones de rendimiento */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Lazy loading para videos */
+.slide:not(.active) .slide-video {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* Estilos para el video activo del slider */
+.slide.active .slide-video {
+  opacity: 1;
+}
+
+/* Fallback para dispositivos móviles */
+@media (max-width: 768px) {
+  .slide-video {
+    height: 300px;
+  }
+}
+
+/* Optimización para conexiones lentas */
+@media (prefers-reduced-motion: reduce) {
+  .slide-video {
+    animation: none;
+  }
+}
+/* Estilos para el texto del slider */
+.slide-caption {
+  position: absolute;
+  bottom: 60px;
+  left: 5%;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+/* Estilos para el párrafo del texto del slider */
+.slide-caption p {
+  left: 5%;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+/* Estilos para los botones del slider */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(158,54,43,0.7);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 30%;
+}
+/* Estilos para el botón anterior del slider */
+.slider-btn.prev { left: 20px; }
+/* Estilos para el botón siguiente del slider */
+.slider-btn.next { right: 20px; }
+/* Efecto hover para los botones del slider */
+.slider-btn:hover {
+  background: rgba(158,54,43,0.9);
+}
+/* ----------- Menú hamburguesa ----------- */
+/* Se mantiene oculto en pantallas grandes */ 
+.hamburguesa {
+  display: none;
+}
+
+/* ----------- Página quienes somos ----------- */
+.quienes-somos-section {
+  padding: 3rem 5%;
+  background: #fffdfa;
+}
+/* Estilos para el contenedor de la imagen y el texto de quienes somos */
+.qs-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* Estilos para la imagen de quienes somos */
+.qs-img img {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  object-fit: cover;
+}
+/* Estilo para el contenedor de texto de quienes somos */
+.qs-texto {
+  flex: 1;
+}
+/* Estilos para el título de quienes somos */
+.qs-texto h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+/* Estilos para el subtítulo de quienes somos */
+.qs-texto h2 {
+  color: #9e362b;
+  margin-bottom: 1.2rem;
+}
+/* Estilos para el párrafo de quienes somos */
+.qs-texto p {
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ----------- Página checkout ----------- */
+.checkout-section {
+  padding: 3rem 5%;
+  background: #fffdfa;
+}
+/* Estilos para el contenedor de formulario y resumen de checkout */
+.checkout-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+/* Estilos para el contenedor de formulario de checkout */
+.checkout-form {
+  flex: 2;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/* Estilos para el título de formulario de checkout */
+.checkout-form h2 {
+  margin-top: 0.5rem;
+  color: #9e362b;
+}
+/* Estilos para el label de formulario de checkout */
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+/* Estilos para los inputs de formulario de checkout */
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"] {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+/* Estilos para los radio buttons de formulario de checkout */
+.checkout-form input[type="radio"] {
+  margin-right: 0.6rem;
+}
+/* Estilos para el botón de formulario de checkout */
+.checkout-form button {
+  margin-top: 1.5rem;
+}
+/* Estilos para el contenedor de resumen de checkout */
+.checkout-resumen {
+  flex: 1;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+/* Estilos para el título de resumen de checkout */
+.checkout-resumen h2 {
+  color: #9e362b;
+  margin-bottom: 1rem;
+}
+/* Estilos para la lista de checkout */
+.checkout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+/* Estilos para los items de la lista de checkout */
+.checkout-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+}
+/* Estilos para el total de checkout */
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* ----------- Línea del tiempo quienes somos ----------- */
+.timeline-section {
+  padding: 3rem 5% 2rem 5%;
+  background: #fffdfa;
+}
+/* Estilos para el título de la línea del tiempo */
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #9e362b;
+  font-size: 2rem;
+}
+/* Estilos para el contenedor de la línea del tiempo */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-left: 40px;
+}
+/* Estilos para el contenedor de la línea del tiempo */
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #e6b800;
+  border-radius: 2px;
+} 
+/* Estilos para el contenedor de la línea del tiempo */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+/* Estilos para el contenedor de la línea del tiempo */
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Estilos para la imagen de la línea del tiempo */
+.timeline-img {
+  flex-shrink: 0;
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e6b800;
+  background: #fff;
+  margin-right: 2rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos para la imagen de la línea del tiempo */
+.timeline-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Estilos para el contenedor de contenido de la línea del tiempo */
+.timeline-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.2rem 1.5rem;
+  min-width: 0;
+}
+/* Estilos para el título de contenido de la línea del tiempo */
+.timeline-content h3 {
+  margin-top: 0;
+  color: #9e362b;
+  font-size: 1.2rem;
+}
+
+/* Para la sección de recetas */
+.recetas-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Cada receta ocupa todo el ancho disponible */
+.receta {
+  display: grid;
+  grid-template-areas: "imagen contenido"
+                       "imagen contenido"
+                       "imagen contenido";
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+/* Imagen a la izquierda, más pequeña */
+.receta img {
+  grid-area: imagen;
+  width: 50px;
+  max-width: 220px;
+  height: 300px;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+  margin:auto
+  
+}
+
+/* Contenido a la derecha, en columna */
+.receta-contenido {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* Estilos para el título de contenido de la línea del tiempo */
+.receta-contenido h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 100px;
+  
+}
+/* Estilos para el párrafo de contenido de la línea del tiempo */
+.receta-contenido p {
+  margin: 0 0 0.7rem 0;
+   margin-top: 100px;
+
+}
+/* Estilos para la lista de contenido de la línea del tiempo */
+.receta-contenido ol {
+  grid-area: contenido;
+   display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* --- Modales legales --- */
+.modal-legal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos para el contenido del modal */
+.modal-content {
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+  position: relative;
+  text-align: left;
+  overflow-y: auto;
+  font-size: 14px;
+}
+/* Estilos para el contenido del modal */
+.modal-content ul,
+.modal-content p,
+.modal-content li {
+  font-size: 14px;
+}
+/* Estilos para el botón de cerrar el modal */
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 2rem;
+  color: #9e362b;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* Estilos para la lista del contenido del modal */
+.modal-content ul {
+  padding-left: 1.2em;
+  margin-bottom: 1em;
+}
+
+
+/* ----------- Media queries para responsive ----------- */
+
+/* Para pantallas de hasta 900px (tablets y móviles grandes) */
+@media (max-width: 900px) {
+  /* Espacio del Header mas puequeño */
+  
+
+ 
+
+  /* Grids en columna y centrados */
+  .productos-grid,
+  .beneficios-grid,
+  .testimonios-grid,
+  .funciona-pasos {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  /* Tarjetas ocupan casi todo el ancho */
+  .producto,
+  .beneficio,
+  .testimonio,
+  .paso {
+    width: 90%;
+    
+  }
+  /* Header en columna y padding reducido */
+  .header-flex {
+    flex-direction: column;
+    padding: 0.5rem 2vw;
+  }
+  /* Logo más pequeño */
+  .logo {
+    height: 50px;
+  }
+  /* Menú vertical y con menos espacio */
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* Hero más compacto */
+  .hero {
+    margin-top: 2rem;
+    padding: 2rem 2vw;
+  }
+  .hero h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.4rem;
+  }
+  .hero h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  /* Slider y video del hero más bajo y adaptado */
+  .hero-slider,
+  .slider,
+  .slide,
+  .slide-video {
+    width: 100%;
+    height: 300px;
+    min-height: 200px;
+    max-height: none;
+  }
+  .slide-video {
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .slide-caption {
+    bottom: 20px;
+    left: 5%;
+    font-size: 1rem;
+  }
+  /* Botones del slider más pequeños y abajo Al gusto si poner o no, que vaya pasando solo */
+  .slider-btn{
+    /* top: 60%;
+    font-size: 0.6rem; */
+    display: none; /* Ocultar botones en móvil */
+  }
+
+  /* Hero sin margen extra */
+  .hero {
+    margin-top: 0;
+    padding: 0;
+  }
+  /* Botón CTA más pequeño */
+  .btn-cta {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  /* Grids con menos espacio entre elementos */
+  .productos-grid,
+  .beneficios-grid,
+  .testimonios-grid,
+  .funciona-pasos {
+    gap: 1.5rem;
+  }
+  /* Tarjetas ocupan todo el ancho disponible */
+  .producto,
+  .beneficio,
+  .testimonio,
+  .paso {
+    width: 100%;
+    max-width: 300px;
+  }
+  /* Footer con menos padding */
+  footer {
+    padding: 1rem 0;
+  }
+  /* Animación de entrada para productos */
+  .producto {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 1s ease, transform 1s cubic-bezier(.4,0,.2,1);
+  }
+  .producto.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* Quiénes somos: imagen y texto en columna */
+  .qs-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .qs-img img {
+    width: 90vw;
+    max-width: 400px;
+  }
+  /* ----------- Carrito.html ----------- */
+  .carrito-section {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+    font-size: 1rem;
+  }
+  .carrito-tabla th, .carrito-tabla td {
+    padding: 0.8rem 0.5rem;
+    font-size: 1rem;
+  }
+  .carrito-img {
+    width: 50px;
+  }
+  .carrito-total {
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  .carrito-acciones {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* Menú hamburguesa visible y menú oculto por defecto */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;
+    top: 0 auto;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.5rem 0;
+    margin: 0;
+    z-index: 200;
+    text-align: center;
+    gap: 1rem;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  .hamburguesa {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    position: relative;
+    z-index: 201;
+  }
+  /* Icono hamburguesa: líneas blancas y animadas */
+  .hamburguesa span,
+  .hamburguesa span:before,
+  .hamburguesa span:after {
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+    left: 6px;
+  }
+  .hamburguesa span {
+    top: 18px;
+  }
+  .hamburguesa span:before {
+    content: '';
+    top: -10px;
+  }
+  .hamburguesa span:after {
+    content: '';
+    top: 10px;
+  }
+  /* Orden de elementos en el header para móvil */
+  .header-flex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6%;
+  }
+  .carrito-header {
+    order: -1;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  nav {
+    order: 2;
+  }
+  .hamburguesa {
+    order: 3;
+  }
+  /* Checkout en columna */
+  .checkout-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items:center;
+  }
+
+  .checkout-form{
+    order:2;
+  }
+
+  .checkout-resumen {
+    order: 1;
+  }
+}
+
+/* Para pantallas de hasta 700px (móviles) */
+@media (max-width: 700px) {
+  /* Slider y video del hero más grande */
+  .slide, .slide-video {
+    height: 280px;
+  }
+  /* Hero más compacto */
+  .hero {
+    margin-top: 4rem;
+    padding: 1rem 4vw;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  /* Menú móvil con tamaño ajustado */
+  nav a {
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+  }
+  /* Carrito más separado en móviles */
+  .carrito-header {
+    margin-right: 1.5rem;
+  }
+  /* Línea del tiempo vertical y centrada */
+  .timeline {
+    padding-left: 0;
+  }
+  .timeline:before {
+    left: 50%;
+    margin-left: -2px;
+  }
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .timeline-img {
+    margin: 0 0 1rem 0;
+  }
+  /* ----------- Carrito.html ----------- */
+  .carrito-section {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.95rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  /* Tabla del carrito se convierte en formato vertical tipo lista */
+  .carrito-tabla,
+  .carrito-tabla thead,
+  .carrito-tabla tbody,
+  .carrito-tabla tr,
+  .carrito-tabla th,
+  .carrito-tabla td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .carrito-tabla thead {
+    display: none;
+  }
+  .carrito-tabla tr {
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #eee;
+    background: #fffdfa;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    padding: 0.7rem 0.5rem;
+  }
+  .carrito-tabla td {
+    padding: 0.4rem 0.2rem;
+    text-align: left;
+    font-size: 0.97rem;
+    border: none;
+    position: relative;
+  }
+  /* Etiquetas de columna como títulos en móvil */
+  .carrito-tabla td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    min-width: 90px;
+    color: #9e362b;
+  }
+  /* Estilo para "/unidad" en móviles */
+  .carrito-tabla td:nth-child(3) {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .carrito-img {
+    width: 42px;
+    margin-bottom: 0.3rem;
+  }
+  .carrito-total {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #faf1e4;
+    border-radius: 10px;
+    border: 2px solid #e6b800;
+  }
+  .carrito-acciones {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Sección de recetas */
+  .recetas-grid {
+    padding: 1rem 0.5rem;
+    gap: 1.5rem;
+  }
+  .receta {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  .receta img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .receta-contenido h3 {
+    font-size: 5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+  }
+  .receta-contenido p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    text-align: left;
+  }
+  .receta-contenido ol {
+    gap: 1em;
+  }
+}
+
+/* Media query para los modales legales */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+    max-height: 95vh;
+  }
+}
+
+/* Optimización de imágenes */
+.producto img,
+.beneficio img,
+.paso img {
+  width: 100px;
+  border-radius: 8px;
+  /* Optimizaciones de rendimiento */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition: transform 0.3s ease;
+  /* Asegurar que las imágenes se muestren correctamente */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimización para imágenes grandes */
+.carrito-img {
+  width: 70px;
+  border-radius: 10px;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  /* Optimizaciones */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Compresión de imágenes para móviles */
+@media (max-width: 768px) {
+  .producto img,
+  .beneficio img,
+  .paso img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Optimizaciones específicas para móviles */
+@media (max-width: 768px) {
+  /* Reducir animaciones en móviles para mejor rendimiento */
+  .producto,
+  .beneficio,
+  .testimonio,
+  .paso {
+    transition: transform 0.2s ease;
+  }
+  
+  .producto:hover,
+  .beneficio:hover,
+  .testimonio:hover,
+  .paso:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Optimizar fuentes para móviles */
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  
+  .hero h2 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  /* Reducir padding para más contenido visible */
+  .carrito-section {
+    padding: 1.5rem;
+  }
+  
+  /* Optimizar tabla del carrito */
+  .carrito-tabla td {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Centrar imágenes de productos en móviles */
+  .producto img,
+  .beneficio img,
+  .paso img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Optimización para conexiones lentas */
+@media (prefers-reduced-data: reduce) {
+  .slide-video {
+    display: none;
+  }
+  
+  .slide {
+    background: linear-gradient(45deg, #9e362b, #e6b800);
+  }
+  
+  .producto img,
+  .beneficio img,
+  .paso img {
+    width: 60px;
+  }
+}
+

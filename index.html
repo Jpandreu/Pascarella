@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pasta Pascarella - Pasta Fresca Italiana</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo-sin fondo.png" type="image/x-icon">
+  <!-- Fuentes de Google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Playfair+Display:700&display=swap" rel="stylesheet">
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Script principal -->
+  <script src="assets/js/main.js"></script>
+</head>
+<body>
+  <!-- Header principal con logo, menú, hamburguesa y carrito -->
+  <header class="main-header">
+    <div class="container header-flex">
+      <!-- Logo de la empresa -->
+      <a href="index.html"><img src="images/logo-blanco.JPG" alt="Pasta Pascarella" class="logo"></a>
+      <!-- Botón hamburguesa para menú móvil -->
+      <button class="hamburguesa" aria-label="Abrir menú">&#9776;
+        <span></span>
+      </button>
+      <!-- Menú de navegación -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="recetas.html">Recetas</a></li>
+          <li><a href="#testimonios">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Icono del carrito de compras -->
+      <div class="carrito-header">
+        <a href="carrito.html" title="Ver carrito">
+          <img src="images/carrito-de-compras.png" alt="Carrito de compras" class="icono-carrito">
+          <span class="carrito-contador">0</span>
+        </a>
+      </div>
+    </div>
+    <!-- Hero con slider de videos -->
+    <section class="hero-slider">
+      <div class="slider">
+        <!-- Slide Maquina de Pasta -->
+        <div class="slide active">
+          <video autoplay loop muted playsinline class="slide-video">
+            <source src="images/Haciendo pasta maquina.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+          <div class="slide-caption">
+            <h1>Siamo artigiani della pasta</h1>
+            <p>Elaborada cada día en nuestra tienda familiar</p>
+          </div>
+        </div>
+        <!-- Slide Cortando Massa Pasta -->
+        <div class="slide">
+          <video autoplay loop muted playsinline class="slide-video">
+            <source src="images/pasta massa.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+          <div class="slide-caption">
+            <h1>Descubre la auténtica pasta fresca</h1>
+            <p>Sabores tradicionales y creaciones originales</p>
+          </div>
+        </div>
+        <!-- Slide Plato de pasta -->
+        <div class="slide">
+          <video autoplay loop muted playsinline class="slide-video">
+            <source src="images/Plato de pasta.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
+          <div class="slide-caption">
+            <h1>Listo para cocinar en minutos</h1>
+            <p>Recibe tu pedido en casa y disfruta de Italia</p>
+          </div>
+        </div>
+        <!-- Botones de navegación del slider -->
+        <button class="slider-btn prev">&#10094;</button>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Sección de sugerencias del mes -->
+    <section id="productos" class="productos">
+      <h2>Sugerencias del Mes</h2>
+      <p class="sub">¡Descubre los productos que nuestro chef recomienda este mes!</p>
+      <div class="productos-grid">
+        <!-- Producto Cappelletti -->
+        <div class="producto">
+          <img src="images/pastas/Cappelletti de Mortadella, Pistacho y Ricotta.png" alt="Cappelleti" style="height: 200px; width: 240px;">
+          <h3>Cappelletti</h3>
+          <p>Delicados, con un relleno cremoso y una combinación exquisita de Mortadella, Pistacho y Ricotta.</p>
+          <span class="precio">4,50 € / 500  g</span>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <!-- Producto Fetuccine Festival -->
+        <div class="producto">
+          <img src="images/pastas/Fettuccine Festival.png" alt="Fetutuccine" style="height: 200px; width: 240px;">
+          <h3>Fetuccine Festival</h3>
+          <p>Un pack festivo con nuestros tres Fettuccine especiales, para disfrutar de una explosión de color y sabor.</p>
+          <span class="precio">5,20 €</span>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <!-- Producto Rottellone Ricotta con Espinacas -->
+        <div class="producto">
+          <img src="images/pastas/Rottellone Ricotta con espinacas.png" alt="Rottellone Ricotta con espinacas" style="height: 200px; width: 240px;">
+          <h3>Rottellone Ricotta con Espinacas</h3>
+          <p>Ruedas de pasta rellenas de una combinación fresca y suave de ricotta y espinacas.</p>
+          <span class="precio">3,90 €</span>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+        <!-- Producto Ravioli Fiore -->
+        <div class="producto">
+          <img src="images/pastas/Ravioli Fiore, tomate seco y mozzarella.png" alt="Ravioli Fiore" style="height: 200px; width: 240px;">
+          <h3>Ravioli Fiore</h3>
+          <p>Con forma de flor, su relleno mediterráneo de tomate seco y mozzarella te transportará al corazón de Italia.</p>
+          <span class="precio">2,80 €</span>
+          <a href="#" class="btn">Añadir al carrito</a>
+        </div>
+      </div>
+      <div class="center">
+        <a href="productos.html" class="btn-cta">Ver todos los productos</a>
+      </div>
+    </section>
+
+    <!-- Sección de cómo funciona -->
+    <section id="funciona" class="funciona">
+      <h2>¿Cómo funciona?</h2>
+      <div class="funciona-pasos">
+        <div class="paso">
+          <img src="images/elegir-pasta.jpg" alt="Elige tu pasta" style="height: 200px; width: 240px;">
+          <h4>1. Elige tu pasta</h4>
+          <p>Selecciona entre nuestra variedad de pastas y salsas frescas.</p>
+        </div>
+        <div class="paso">
+          <img src="images/recibirr-pedido.jpg" alt="Recibe en casa" style="height: 200px; width: 240px;">
+          <h4>2. Recibe en casa</h4>
+          <p>Enviamos tu pedido en frío para mantener la máxima frescura.</p>
+        </div>
+        <div class="paso">
+          <img src="images/cocina-pasta-fresca.jpg" alt="Disfruta" style="height: 200px; width: 240px;">
+          <h4>3. Cocina y disfruta</h4>
+          <p>Prepara tu plato en menos de 6 minutos y disfruta de Italia en tu mesa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de beneficios -->
+    <section id="beneficios" class="beneficios">
+      <h2>¿Por qué Pasta Pascarella?</h2>
+      <div class="beneficios-grid">
+        <div class="beneficio">
+          <img src="images/Pasta-fresca-artesanal.jpg" alt="100% natural" style="height: 200px; width: 240px;">
+          <h4>100% Natural</h4>
+          <p>Sin conservantes ni colorantes. Solo ingredientes frescos.</p>
+        </div>
+        <div class="beneficio">
+          <img src="images/paquete-pasta.jpg" alt="Sin desperdicio" style="height: 200px; width: 240px;">
+          <h4>Sin desperdicio</h4>
+          <p>Compra lo que necesitas, cuando lo necesitas.</p>
+        </div>
+        <div class="beneficio">
+          <img src="images/relleno-pasta.jpg" alt="Artesanal" style="height: 200px; width: 240px;">
+          <h4>Artesanal</h4>
+          <p>Rellenos y masas hechos a mano, como en Italia.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios" class="testimonios">
+      <h2>¿Qué dicen nuestros clientes?</h2>
+      <div class="testimonios-grid">
+        <div class="testimonio">
+          <img src="images/testimonios/imagen-silvana.jpg" alt="Cliente 1">
+          <blockquote>
+            "La mejor pasta fresca que he probado fuera de Italia. ¡Repetiré seguro!"
+          </blockquote>
+          <span>- Silvana</span>
+        </div>
+        <div class="testimonio">
+          <img src="images/testimonios/imagen-giovanni.jpg" alt="Cliente 2">
+          <blockquote>
+            "Entrega rápida y producto de calidad. Muy recomendable."
+          </blockquote>
+          <span>- Giovanni</span>
+        </div>
+        <div class="testimonio">
+          <img src="images/testimonios/imagen-maria.jpg" alt="Cliente 3">
+          <blockquote>
+            "Los raviolis de gorgonzola son una delicia. Sabor auténtico italiano en casa."
+          </blockquote>
+          <span>- María</span>
+        </div>
+        <div class="testimonio">
+          <img src="images/testimonios/imagen-carlos.jpg" alt="Cliente 4">
+          <blockquote>
+            "Frescura excepcional y atención al cliente perfecta. 100% recomendado."
+          </blockquote>
+          <span>- Carlos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <textarea id="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p style="text-align:center; font-size:18px;">O escríbenos a este correo electrónico: <a href="mailto:pascarelladelicatessenca@gmail.com">pascarelladelicatessenca@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- Footer con redes sociales, logo y derechos -->
+  <footer>
+    <div class="container">
+      <section id="redes" class="redes">
+        <h2>Síguenos en redes sociales</h2>
+        <div class="social">
+          <a href="404.html"><img src="images/facebook.png" alt="Facebook" style="height: 50px; width: auto;"></a>
+          <a href="https://www.instagram.com/pastapascarella/"><img src="images/logotipo-de-instagram.png" alt="Instagram" style="height: 50px; width: auto;"></a>
+        </div>
+      </section>
+      <!-- Enlaces legales -->
+      <section class="footer-legales" style="text-align:center; margin: 20px 0 10px 0;">
+        <a href="legal/aviso-legal.html" target="_blank" style="margin: 0 10px;">Aviso Legal</a> |
+        <a href="legal/politica-privacidad.html" target="_blank" style="margin: 0 10px;">Política de Privacidad</a> |
+        <a href="legal/politica-cookies.html" target="_blank" style="margin: 0 10px;">Política de Cookies</a> |
+        <a href="legal/condiciones-uso.html" target="_blank" style="margin: 0 10px;">Condiciones de Uso</a>
+      </section>
+      <img src="images/logo-sin-fondo-negro.png" alt="Pasta Pascarella" class="logo-footer" style="height: 80px;">
+      <p>&copy; 2025 Pasta Pascarella. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidad - Pasta Pascarella</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <button onclick="cerrarVentana()" style="position:fixed;top:18px;right:28px;font-size:2rem;background:none;border:none;color:#9e362b;cursor:pointer;z-index:1001;" title="Cerrar">&times;</button>
+  <main class="legal-main" style="max-width:700px;margin:40px auto;padding:2em;background:#fff;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.08);">
+    <h1>Política de Privacidad</h1>
+    <p><strong>1. Responsable del tratamiento de los datos</strong></p>
+    <ul>
+      <li><strong>Responsable:</strong> [Nombre del titular o empresa]</li>
+      <li><strong>NIF/CIF:</strong> [Número de identificación fiscal]</li>
+      <li><strong>Domicilio social:</strong> [Dirección completa]</li>
+      <li><strong>Correo electrónico:</strong> [Correo electrónico de contacto]</li>
+    </ul>
+    <p><strong>2. Finalidad del tratamiento de los datos</strong></p>
+    <p>En Pasta Pascarella tratamos la información que nos facilitan las personas interesadas con el fin de:</p>
+    <ul>
+      <li>Gestionar y enviar los pedidos realizados a través de la web.</li>
+      <li>Atender consultas o solicitudes recibidas a través de los formularios de contacto.</li>
+      <li>Enviar comunicaciones comerciales relacionadas con nuestros productos y servicios, si el usuario lo autoriza expresamente.</li>
+    </ul>
+    <p><strong>3. Legitimación para el tratamiento de sus datos</strong></p>
+    <p>La base legal para el tratamiento de sus datos es:</p>
+    <ul>
+      <li>La ejecución de un contrato (gestión de pedidos).</li>
+      <li>El consentimiento del usuario (formulario de contacto y comunicaciones comerciales).</li>
+    </ul>
+    <p><strong>4. Conservación de los datos</strong></p>
+    <p>Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial o durante los años necesarios para cumplir con las obligaciones legales.</p>
+    <p><strong>5. Destinatarios de los datos</strong></p>
+    <p>No se cederán datos a terceros, salvo obligación legal o para la gestión de los envíos (empresas de mensajería).</p>
+    <p><strong>6. Derechos de los usuarios</strong></p>
+    <p>Cualquier persona tiene derecho a obtener confirmación sobre si en Pasta Pascarella estamos tratando datos personales que le conciernan, o no.</p>
+    <p>Las personas interesadas tienen derecho a:</p>
+    <ul>
+      <li>Acceder a sus datos personales.</li>
+      <li>Solicitar la rectificación de los datos inexactos.</li>
+      <li>Solicitar su supresión cuando los datos ya no sean necesarios.</li>
+      <li>Solicitar la limitación del tratamiento de sus datos.</li>
+      <li>Oponerse al tratamiento de sus datos.</li>
+      <li>Solicitar la portabilidad de sus datos.</li>
+    </ul>
+    <p>Para ejercer estos derechos, puede enviar una solicitud a [Correo electrónico de contacto], adjuntando copia de su DNI o documento equivalente.</p>
+    <p><strong>7. Medidas de seguridad</strong></p>
+    <p>Pasta Pascarella adopta los niveles de seguridad requeridos por la normativa vigente para la protección de los datos personales.</p>
+    <p><strong>8. Cambios en la política de privacidad</strong></p>
+    <p>Pasta Pascarella se reserva el derecho a modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales.</p>
+    <p style="margin-top:2em;"><a href="../index.html">&larr; Volver a la página principal</a></p>
+  </main>
+  <script>
+    function cerrarVentana() {
+      // Verificar si la ventana fue abierta desde otra ventana
+      if (window.opener && !window.opener.closed) {
+        try {
+          window.close();
+          return;
+        } catch (e) {
+          // Si falla, continuar con la redirección
+        }
+      }
+      
+      // Si no se puede cerrar, redirigir a la página principal
+      try {
+        window.location.href = '../index.html';
+      } catch (e) {
+        // Fallback: mostrar mensaje
+        alert('Para volver, usa el botón de atrás de tu navegador o ve a la página principal.');
+      }
+    }
+  </script>
+</body>
+</html> 
