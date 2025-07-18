@@ -882,9 +882,6 @@ footer {
 /* Imagen a la izquierda, más pequeña */
 .receta img {
   grid-area: imagen;
-  width: 50px;
-  max-width: 220px;
-  height: 300px;
   border-radius: 12px;
   display: block;
   object-fit: cover;
