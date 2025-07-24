@@ -59,6 +59,27 @@ Somos una familia apasionada por la cocina italiana y queremos compartir nuestra
 
 ---
 
+
+## Backend PHP
+
+El proyecto incluye un backend en PHP para gestionar el formulario de contacto:
+
+- **Ubicación:** `assets/php/api.php` y `assets/php/config/conexion.php`
+- **¿Qué hace?**
+  - Recibe los datos enviados desde el formulario de contacto mediante JavaScript (`fetch` en `app.js`).
+  - Inserta los datos en la base de datos MySQL en la tabla `contacto pascarella`.
+  - Devuelve una respuesta en formato JSON para mostrar mensajes de éxito o error en la web.
+- **Conexión a la base de datos:**
+  - El archivo `conexion.php` contiene los datos de conexión (host, usuario, contraseña, base de datos). En este proyecto, los datos son ficticios y seguros para compartir.
+  - Si usas datos reales, recuerda agregarlos a `.gitignore` y subir solo un archivo de ejemplo.
+- **Estructura esperada de la tabla:**
+  - `id` (INT, AUTO_INCREMENT, PRIMARY KEY)
+  - `Nombre` (VARCHAR)
+  - `Correo electrónico` (VARCHAR)
+  - `Missatge` (LONGTEXT)
+
+**Nota:** El backend está preparado para entorno local y para recibir datos en formato JSON. Si quieres usar el formulario sin JavaScript, deberás adaptar el PHP para aceptar datos de formulario clásico (`$_POST`).
+
 © 2025 Pasta Pascarella. Todos los derechos reservados. Creado por Josep Andreu.
 
 Queda prohibida la reproducción, distribución o modificación total o parcial de este proyecto sin autorización expresa de Pasta Pascarella.
